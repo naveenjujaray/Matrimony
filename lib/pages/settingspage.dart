@@ -36,7 +36,7 @@ class _SettingsPageState extends State<SettingsPage> {
                       ),
                     ),
                     leading: Icon(
-                      Icons.mail,
+                      FontAwesomeIcons.paperPlane, color: Colors.lightBlue,
                     ),
                     onTap: () => Wiredash.of(context)?.show(),
                   ),
@@ -55,7 +55,7 @@ class _SettingsPageState extends State<SettingsPage> {
                     ),
                     leading: Icon(
                       FontAwesomeIcons.solidStar,
-                      color: Colors.yellow[900],
+                      color: Colors.amber,
                     ),
                     onTap: null,
                   ),
@@ -72,7 +72,7 @@ class _SettingsPageState extends State<SettingsPage> {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    leading: Icon(FontAwesomeIcons.shareAlt),
+                    leading: Icon(FontAwesomeIcons.shareAlt, color: Colors.greenAccent,),
                     onTap: null,
                   ),
                 ),
@@ -88,7 +88,7 @@ class _SettingsPageState extends State<SettingsPage> {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    leading: Icon(FontAwesomeIcons.infoCircle),
+                    leading: Icon(FontAwesomeIcons.infoCircle,color: Colors.blueAccent,),
                     onTap: () {
                       //Navigator.push(context, MaterialPageRoute(builder: (context) => AboutPage()));//
                       showAboutPage(
@@ -99,34 +99,34 @@ class _SettingsPageState extends State<SettingsPage> {
                             'Displays an About dialog, which describes the application.'),
                         children: <Widget>[
                           MarkdownPageListTile(
-                            icon: Icon(Icons.list),
+                            icon: Icon(Icons.list, color: Colors.deepPurpleAccent,),
                             title: const Text('Changelog'),
                             filename: 'CHANGELOG.md',
                           ),
                           MarkdownPageListTile(
                             filename: 'CONTRIBUTING.md',
                             title: Text('Contributing'),
-                            icon: Icon(Icons.share),
+                            icon: Icon(Icons.share, color: Colors.greenAccent,),
                           ),
                           MarkdownPageListTile(
                             filename: 'CODE_OF_CONDUCT.md',
                             title: Text('Code of conduct'),
-                            icon: Icon(Icons.sentiment_satisfied),
+                            icon: Icon(Icons.sentiment_satisfied, color: Colors.blueAccent),
                           ),
                           MarkdownPageListTile(
                             filename: 'LICENSE.md',
                             title: Text('View License'),
-                            icon: Icon(Icons.description),
+                            icon: Icon(Icons.description, color: Colors.amberAccent,),
                           ),
                           LicensesPageListTile(
                             title: Text('Open Source Licenses'),
-                            icon: Icon(Icons.favorite),
+                            icon: Icon(Icons.favorite,color: Colors.redAccent,),
                           ),
                         ],
                         applicationIcon: const SizedBox(
                           width: 100,
                           height: 100,
-                          child: Icon(FontAwesomeIcons.bookOpen,color: Colors.amber,),
+                          child: Icon(FontAwesomeIcons.heart,color: Colors.redAccent,),
                         ),
                       );
                     },
