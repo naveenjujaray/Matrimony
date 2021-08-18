@@ -33,6 +33,8 @@ dependencies:
   google_fonts: ^2.1.0
   about: ^2.0.1
   url_launcher: ^6.0.9
+  bloc: ^7.1.0
+  wiredash: ^0.7.0+1
 
 dev_dependencies:
   flutter_test:
