@@ -114,7 +114,7 @@ class _SettingsPageState extends State<SettingsPage> {
                             icon: Icon(Icons.sentiment_satisfied, color: Colors.blueAccent),
                           ),
                           MarkdownPageListTile(
-                            filename: 'LICENSE.md.md',
+                            filename: 'LICENSE.md',
                             title: Text('View License'),
                             icon: Icon(Icons.description, color: Colors.amberAccent,),
                           ),
